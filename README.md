@@ -27,19 +27,29 @@ To build a C program that prints integer, float,character, and string literals o
 # Program:
 
 ```python
+int intLiteral = 100;
 
-#include <stdio.h>
- int main()
-{
-char c1,c2,c3;
- scanf("%c %c %c",&c1,&c2,&c3);
-printf("The reverse of %c%c%c is %c%c%c",c1,c2,c3,c3,c2,c1);
+float floatLiteral = 12.345;
+
+char charLiteral = 'A';
+
+char stringLiteral[] = "Hello, Susmitha!";
+
+printf("Integer Literal: %d\n", intLiteral);
+
+printf("Float Literal: %.3f\n", floatLiteral);
+
+printf("Character Literal: %c\n", charLiteral);
+
+printf("String Literal: %s\n", stringLiteral);
+
 return 0;
- }
+
 ```
 # Output:
 
-<img width="846" height="293" alt="image" src="https://github.com/user-attachments/assets/fb880200-482a-4f73-8ad3-0e55697f7d82" />
+<img width="957" height="222" alt="image" src="https://github.com/user-attachments/assets/6c5b66a4-63d7-472e-b8d4-f9c84c21fa20" />
+
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -72,25 +82,17 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 # Program:
 ```python
-#include <stdio.h>
-int main()
-{
-int num;
- scanf("%d",&num);
-if (num < 0){
- printf("number is negative");
-}
-else if(num > 0) {
- printf("number is positive");
-}
-else{
-printf("number is 0");
-}
+const int AGE = 20;
+
+printf("Macro Constant PI: %f\n", PI);
+
+printf("Constant Variable AGE: %d\n", AGE);
+
 return 0;
-}
 ```
 # Output:
-<img width="837" height="358" alt="image" src="https://github.com/user-attachments/assets/dc190f09-e8e6-40fc-9aa0-83e90f6b8df6" />
+
+<img width="592" height="182" alt="image" src="https://github.com/user-attachments/assets/8e90de7d-0583-4565-91e2-d1dcf61db274" />
 
 
 # Result: 
@@ -116,18 +118,27 @@ Thus, the program was implemented and executed successfully, and the required ou
    Stop
 # Program:
 ```python
-#include <stdio.h>
-int main()
-{
-float num1,num2,min;
-scanf("%f %f",&num1,&num2);
-min = (num1<num2)? num1:num2;
-printf("Minimum between %.3f and %.3f is %.3f",num1,num2,min);
+int num = 25;   
+
+float percentage = 87.65f;
+
+double bigValue = 12345.6789;
+
+char grade = 'A';    
+
+printf("Integer value: %d\n", num);
+
+printf("Float value: %.2f\n", percentage);
+
+printf("Double value: %.4lf\n", bigValue);
+
+printf("Character value: %c\n", grade);
+
 return 0;
-}
 ```
 # Output:
-<img width="835" height="323" alt="image" src="https://github.com/user-attachments/assets/f8d67f63-74cb-4eb6-b703-86573ed10e81" />
+
+<img width="587" height="196" alt="image" src="https://github.com/user-attachments/assets/efb98b7d-2dfa-4a61-9385-d0ac75e617cb" />
 
 # Result: 
 
@@ -168,21 +179,55 @@ return 0;
   Stop
 # Program:
 ```python
-#include <stdio.h>
-int main()
-{
-int n;
-scanf("%d",&n);
-if(n==1) {
-printf("number is equal to 1"); }
-else{
-printf("number is not equal to 1"); }
-return 0;
+int a, b;
+
+printf("Enter two integers: ");
+
+scanf("%d %d", &a, &b);
+
+printf("\n--- Arithmetic Operations ---\n");
+
+printf("Addition: %d + %d = %d\n", a, b, a + b);
+
+printf("Subtraction: %d - %d = %d\n", a, b, a - b);
+
+printf("Multiplication: %d * %d = %d\n", a, b, a * b);
+
+if (b != 0) {
+
+    printf("Division: %d / %d = %d\n", a, b, a / b);
+    
+    printf("Remainder: %d %% %d = %d\n", a, b, a % b);
+    
+} else {
+
+    printf("Division: Not possible (division by zero)\n");
+    
+    printf("Remainder: Not possible (division by zero)\n");
 }
+
+printf("\n--- Bitwise Operations ---\n");
+
+printf("AND (a & b): %d\n", a & b);
+
+printf("OR (a | b): %d\n", a | b);
+
+printf("XOR (a ^ b): %d\n", a ^ b);
+
+printf("Left Shift (a << 1): %d\n", a << 1);
+
+printf("Right Shift (a >> 1): %d\n", a >> 1);
+
+printf("NOT (~a): %d\n", ~a);
+
+printf("NOT (~b): %d\n", ~b);
+
+return 0;
 ```
 # Output:
 
-<img width="280" height="43" alt="image" src="https://github.com/user-attachments/assets/46218388-cade-4377-9651-7ce57e5e5c1f" />
+<img width="582" height="473" alt="image" src="https://github.com/user-attachments/assets/8b6f7c9f-29e3-4164-9af6-2d7e626e41b1" />
+
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -228,24 +273,40 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 # Program:
 ```python
-#include <stdio.h>
-int main()
-{
-int s1,s2,s3,s4,s5,s6,s7;
-scanf("%d %d %d %d %d %d %d",&s1,&s2,&s3,&s4,&s5,&s6,&s7);
-float total,avg,percent;
-total = s1+s2+s3+s4+s5+s6+s7;
-avg = (total)/7.0;
-percent = ((total)/700.0) * 100;
-printf("Total marks = %.2f",total);
-printf("\nAverage marks = %.2f",avg);
-printf("\nPercentage = %.2f",percent);
+char ch;
+
+printf("Enter a character: ");
+
+scanf("%c", &ch);
+
+( (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z') ) ?
+
+    ( (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+    
+       ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') ?
+       
+        printf("Vowel\n") :
+        
+        printf("Consonant\n")
+        
+    )
+    
+:
+
+    ( (ch >= '0' && ch <= '9') ?
+    
+        printf("Digit\n") :
+        
+        printf("Special Symbol\n")
+        
+    );
+    
 return 0;
-}
 ```
 # Output:
 
-<img width="843" height="442" alt="image" src="https://github.com/user-attachments/assets/d0633993-b839-4d46-880f-181fce92813f" />
+
+<img width="583" height="177" alt="image" src="https://github.com/user-attachments/assets/723f9a20-a6e2-4dff-9439-f5e921a945de" />
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
