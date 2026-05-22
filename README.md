@@ -27,6 +27,10 @@ To build a C program that prints integer, float,character, and string literals o
 # Program:
 
 ```python
+#include<stdio.h>
+int main()
+{
+
 int intLiteral = 100;
 
 float floatLiteral = 12.345;
@@ -44,6 +48,7 @@ printf("Character Literal: %c\n", charLiteral);
 printf("String Literal: %s\n", stringLiteral);
 
 return 0;
+}
 
 ```
 # Output:
@@ -82,6 +87,9 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 # Program:
 ```python
+#include<stdio.h>
+int main()
+{
 const int AGE = 20;
 
 printf("Macro Constant PI: %f\n", PI);
@@ -89,6 +97,7 @@ printf("Macro Constant PI: %f\n", PI);
 printf("Constant Variable AGE: %d\n", AGE);
 
 return 0;
+}
 ```
 # Output:
 
@@ -118,6 +127,9 @@ Thus, the program was implemented and executed successfully, and the required ou
    Stop
 # Program:
 ```python
+#include<stdio.h>
+int main()
+{
 int num = 25;   
 
 float percentage = 87.65f;
@@ -135,6 +147,7 @@ printf("Double value: %.4lf\n", bigValue);
 printf("Character value: %c\n", grade);
 
 return 0;
+}
 ```
 # Output:
 
@@ -179,6 +192,9 @@ return 0;
   Stop
 # Program:
 ```python
+#include<stdio.h>
+int main()
+{
 int a, b;
 
 printf("Enter two integers: ");
@@ -223,6 +239,7 @@ printf("NOT (~a): %d\n", ~a);
 printf("NOT (~b): %d\n", ~b);
 
 return 0;
+}
 ```
 # Output:
 
@@ -273,6 +290,9 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 # Program:
 ```python
+#include<stdio.h>
+int main()
+{
 char ch;
 
 printf("Enter a character: ");
@@ -302,6 +322,7 @@ scanf("%c", &ch);
     );
     
 return 0;
+}
 ```
 # Output:
 
